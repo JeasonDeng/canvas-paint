@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>canvas 画板</title>
+</head>
+
+<body>
+  <canvas id="canvas" width="600" height="600"></canvas>
+  <div class="actions">
+    <button id="pen" class="active">
+      <svg class="icon ">
+        <use xlink:href="#icon-pen"></use>
+      </svg>
+    </button>
+    <button id="erase">
+      <svg class="icon">
+        <use xlink:href="#icon-erase"></use>
+      </svg>
+    </button>
+    <button id="clear">
+      <svg class="icon">
+        <use xlink:href="#icon-delete"></use>
+      </svg>
+    </button>
+    <button id="save">
+      <svg class="icon">
+        <use xlink:href="#icon-save"></use>
+      </svg>
+    </button>
+    <div class="colors show">
+      <div class="red"></div>
+      <div class="orange"></div>
+      <div class="yellow"></div>
+    </div>
+    <div class="line-wrap">
+      <button id="line">
+        <svg class="icon ">
+          <use xlink:href="#icon-line"></use>
+        </svg>
+      </button>
+      <div class="line-inner">
+        <div class="line4">
+          <div></div>
+        </div>
+        <div class="line8">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="//at.alicdn.com/t/font_2602676_39a2m5annjq.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
