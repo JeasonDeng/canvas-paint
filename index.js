@@ -97,7 +97,7 @@ function drawOrClean() {
     }
   } else {
     canvas.onmousedown = function(e) {
-      colors.classList.remove('show')
+      // colors.classList.remove('show')
       flag = true
       const x = e.clientX
       const y = e.clientY - 72
